@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            /* justify-content: center;
+            align-items: center; */
+            /* position: relative; */
+        }
+        .sub-container{
+            width: 300px;
+            height: 50%;
+            border: 3px solid teal;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: cadetblue;
+            border-style: none;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        
+        .position-container{
+            width: 200px;
+            margin-top: 20px;
+            border: 3px solid teal;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid tan;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20%;
+            left: -25%;
+
+        
+        }
+        .position-container2{
+            width: 200px;
+            margin-top: 20px;
+            border: 3px solid teal;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid tan;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            /* bottom: 20%;
+            left: -25%; */
+            top: 20%;
+            right: -25%;
+
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolorum deleniti ducimus cupiditate reprehenderit asperiores similique iure veniam quod possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus hic placeat deserunt eaque eum nemo voluptatum, possimus unde, perferendis dolor dolore expedita. Optio harum quisquam explicabo, perferendis quas vel.</p>
+            <div class="position-container">
+                <h1>Bangladesh</h1>
+                <p>It is a small and poor country</p>
+            </div>
+            <div class="position-container2">
+                <h1>Bangladesh</h1>
+                <p>It is a small and poor country</p>
+            </div>
+        </div>
+        <!-- <div class="position-container">
+            <h1>Bangladesh</h1>
+            <p>It is a small and poor country</p>
+        </div> -->
+    </div>
+</body>
+</html>
